@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBlog - 探索科技的无限可能</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <button class="menu-btn" id="menuBtn" aria-label="菜单">
+                    <span class="material-icons-round">menu</span>
+                </button>
+                <a href="#" class="logo">
+                    <span class="logo-icon">T</span>
+                    <span class="logo-text">TechBlog</span>
+                </a>
+            </div>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#" class="nav-item active">首页</a>
+                <a href="#" class="nav-item">技术</a>
+                <a href="#" class="nav-item">AI</a>
+                <a href="#" class="nav-item">开源</a>
+                <a href="#" class="nav-item">教程</a>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" aria-label="搜索">
+                    <span class="material-icons-round">search</span>
+                </button>
+                <button class="theme-btn" id="themeBtn" aria-label="切换主题">
+                    <span class="material-icons-round">dark_mode</span>
+                </button>
+                <button class="subscribe-btn">订阅</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">探索科技的无限可能</h1>
+                <p class="hero-subtitle">分享前沿技术、深度分析与创新思考</p>
+                <div class="hero-tags">
+                    <span class="tag">人工智能</span>
+                    <span class="tag">Web开发</span>
+                    <span class="tag">云计算</span>
+                    <span class="tag">开源项目</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-section">
+            <div class="section-header">
+                <h2 class="section-title">最新文章</h2>
+                <div class="filter-chips">
+                    <button class="chip active">全部</button>
+                    <button class="chip">技术</button>
+                    <button class="chip">AI</button>
+                    <button class="chip">教程</button>
+                </div>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card featured">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80" alt="AI illustration">
+                        <div class="card-category">AI</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="author">
+                                <img src="https://ui-avatars.com/api/?name=ZM&background=4285f4&color=fff" alt="作者头像">
+                                张明
+                            </span>
+                            <span class="date">2026年3月12日</span>
+                        </div>
+                        <h3 class="card-title">深入理解大语言模型的推理能力：从原理到实践</h3>
+                        <p class="card-excerpt">探索大语言模型如何进行复杂推理，以及如何在实际应用中优化推理性能...</p>
+                        <div class="card-footer">
+                            <span class="read-time">
+                                <span class="material-icons-round tiny">schedule</span>
+                                12 分钟阅读
+                            </span>
+                            <div class="card-actions">
+                                <button class="action-btn"><span class="material-icons-round">bookmark_border</span></button>
+                                <button class="action-btn"><span class="material-icons-round">share</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=600&q=80" alt="JavaScript">
+                        <div class="card-category">技术</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="author">
+                                <img src="https://ui-avatars.com/api/?name=LH&background=34a853&color=fff" alt="作者">
+                                李华
+                            </span>
+                            <span class="date">2026年3月11日</span>
+                        </div>
+                        <h3 class="card-title">现代 JavaScript 异步编程最佳实践</h3>
+                        <p class="card-excerpt">从 Promise 到 async/await，全面解析异步编程...</p>
+                        <div class="card-footer">
+                            <span class="read-time">
+                                <span class="material-icons-round tiny">schedule</span>
+                                8 分钟阅读
+                            </span>
+                            <div class="card-actions">
+                                <button class="action-btn"><span class="material-icons-round">bookmark_border</span></button>
+                                <button class="action-btn"><span class="material-icons-round">share</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80" alt="Cloud">
+                        <div class="card-category">云计算</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="author">
+                                <img src="https://ui-avatars.com/api/?name=WF&background=ea4335&color=fff" alt="作者">
+                                王芳
+                            </span>
+                            <span class="date">2026年3月10日</span>
+                        </div>
+                        <h3 class="card-title">云原生架构设计：从单体到微服务的演进</h3>
+                        <p class="card-excerpt">深入探讨企业级应用如何迁移到云原生微服务架构...</p>
+                        <div class="card-footer">
+                            <span class="read-time">
+                                <span class="material-icons-round tiny">schedule</span>
+                                15 分钟阅读
+                            </span>
+                            <div class="card-actions">
+                                <button class="action-btn"><span class="material-icons-round">bookmark_border</span></button>
+                                <button class="action-btn"><span class="material-icons-round">share</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&q=80" alt="Code">
+                        <div class="card-category">开源</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="author">
+                                <img src="https://ui-avatars.com/api/?name=CW&background=fbbc04&color=fff" alt="作者">
+                                陈伟
+                            </span>
+                            <span class="date">2026年3月9日</span>
+                        </div>
+                        <h3 class="card-title">开源项目维护指南：构建健康的社区生态</h3>
+                        <p class="card-excerpt">分享开源项目维护的经验，包括社区建设、代码审查...</p>
+                        <div class="card-footer">
+                            <span class="read-time">
+                                <span class="material-icons-round tiny">schedule</span>
+                                10 分钟阅读
+                            </span>
+                            <div class="card-actions">
+                                <button class="action-btn"><span class="material-icons-round">bookmark_border</span></button>
+                                <button class="action-btn"><span class="material-icons-round">share</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80" alt="Security">
+                        <div class="card-category">安全</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="author">
+                                <img src="https://ui-avatars.com/api/?name=ZJ&background=9c27b0&color=fff" alt="作者">
+                                赵静
+                            </span>
+                            <span class="date">2026年3月8日</span>
+                        </div>
+                        <h3 class="card-title">Web 应用安全防护：从入门到实战</h3>
+                        <p class="card-excerpt">全面介绍常见的 Web 安全漏洞及其防护措施...</p>
+                        <div class="card-footer">
+                            <span class="read-time">
+                                <span class="material-icons-round tiny">schedule</span>
+                                20 分钟阅读
+                            </span>
+                            <div class="card-actions">
+                                <button class="action-btn"><span class="material-icons-round">bookmark_border</span></button>
+                                <button class="action-btn"><span class="material-icons-round">share</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80" alt="Programming">
+                        <div class="card-category">教程</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="author">
+                                <img src="https://ui-avatars.com/api/?name=SL&background=00bcd4&color=fff" alt="作者">
+                                孙磊
+                            </span>
+                            <span class="date">2026年3月7日</span>
+                        </div>
+                        <h3 class="card-title">TypeScript 高级类型体操：实用技巧合集</h3>
+                        <p class="card-excerpt">深入 TypeScript 类型系统，掌握高级类型推导...</p>
+                        <div class="card-footer">
+                            <span class="read-time">
+                                <span class="material-icons-round tiny">schedule</span>
+                                18 分钟阅读
+                            </span>
+                            <div class="card-actions">
+                                <button class="action-btn"><span class="material-icons-round">bookmark_border</span></button>
+                                <button class="action-btn"><span class="material-icons-round">share</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="load-more">
+                <button class="load-more-btn">
+                    <span class="material-icons-round">refresh</span>
+                    加载更多文章
+                </button>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h3 class="newsletter-title">订阅更新</h3>
+                <p class="newsletter-text">获取最新技术文章和行业洞察，直接发送到您的邮箱</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="输入您的邮箱地址" class="email-input">
+                    <button type="submit" class="submit-btn">订阅</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于我们</h4>
+                <p>TechBlog 致力于分享高质量的技术内容，帮助开发者成长。</p>
+            </div>
+            <div class="footer-section">
+                <h4>快速链接</h4>
+                <a href="#">首页</a>
+                <a href="#">技术文章</a>
+                <a href="#">开源项目</a>
+                <a href="#">关于我们</a>
+            </div>
+            <div class="footer-section">
+                <h4>联系方式</h4>
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+                <a href="#">邮箱</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 TechBlog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
